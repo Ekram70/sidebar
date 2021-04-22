@@ -1,0 +1,141 @@
+/* Default CSS Start */
+:root {
+  --white: #fff;
+  --background: #d2d6dc;
+  --menu-bg: #252f3f;
+  --menu-bg-hover: #161e2e;
+  --label: #ebebeb;
+  --submenu: #adb3bd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* Default Css End */
+
+.sidebar {
+  margin: 16px;
+}
+
+.menu {
+  background-color: var(--menu-bg);
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item a {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  width: 280px;
+}
+
+.menu-item a:hover {
+  background-color: var(--menu-bg-hover);
+}
+
+.menu-item .label,
+.menu-item .number {
+  color: var(--label);
+  font-size: 16px;
+}
+
+.menu-item a:hover .label,
+.menu-item a:hover .number {
+  color: var(--white);
+}
+
+.menu-item .number {
+  margin-left: auto;
+  background-color: var(--menu-bg-hover);
+  padding: 5px 15px;
+  border-radius: 16px;
+}
+
+.menu svg {
+  fill: var(--submenu);
+  margin-right: 20px;
+}
+
+.menu-item a:hover svg {
+  fill: var(--white);
+}
+
+.submenu {
+  margin-top: 50px;
+}
+
+.submenu a:hover {
+  background-color: var(--menu-bg);
+  color: var(--submenu);
+}
+
+.submenu .label .submenu a:hover .label {
+  text-transform: uppercase;
+  color: var(--submenu);
+}
+
+.profile {
+  margin-top: 30px;
+}
+
+.profile img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.setting {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.info {
+  color: var(--submenu);
+}
+
+.active a {
+  background-color: var(--menu-bg-hover);
+}
+
+.active svg {
+  fill: var(--white);
+}
+
+.active .label,
+.active .number {
+  color: var(--white);
+}
+
+.menu-icon {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -3px;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  background-color: var(--menu-bg);
+  fill: var(--white);
+  border-radius: 5px;
+}
