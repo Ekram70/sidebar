@@ -18,6 +18,7 @@
 body {
   background-color: var(--background);
   font-family: "Nunito", sans-serif;
+  overflow: hidden;
 }
 
 a {
@@ -106,9 +107,33 @@ ul li {
   margin-right: 15px;
 }
 
-.setting {
+.profile a:hover {
+  background-color: var(--menu-bg);
+}
+
+.profile a:hover .setting {
+  fill: var(--submenu);
+}
+
+.profile .info:hover {
+  color: var(--white);
+}
+
+/* for Specificity reasons svg.setting */
+
+svg.setting {
   margin-left: auto;
   margin-right: 0px;
+  padding: 5px 5px;
+  border-radius: 16px;
+  height: 40px;
+  width: 40px;
+}
+
+/* for Specificity reasons .profile svg.setting:hover */
+.profile svg.setting:hover {
+  fill: var(--white);
+  background-color: var(--menu-bg-hover);
 }
 
 .info {
@@ -138,4 +163,27 @@ ul li {
   background-color: var(--menu-bg);
   fill: var(--white);
   border-radius: 5px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+/* css intended for js */
+.label-hide,
+.number-hide,
+.setting-hide {
+  visibility: hidden;
+}
+
+.menu-width {
+  width: 60px;
+}
+
+/* Bug should be fixed */
+.profile-img-fix {
+  padding-left: 0px;
+}
+
+.menu-icon-rotate {
+  transform: rotate(0deg);
+  background-color: var(--menu-bg-hover);
 }
