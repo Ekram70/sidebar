@@ -56,13 +56,14 @@ ul li {
   background-color: var(--menu-bg-hover);
 }
 
-.menu-item-svg {
-  fill: var(--submenu);
+.menu-item-icon {
+  font-size: 25px;
+  color: var(--submenu);
   margin-right: 20px;
 }
 
-.menu-item-link:hover .menu-item-svg {
-  fill: var(--white);
+.menu-item-link:hover .menu-item-icon {
+  color: var(--white);
 }
 
 .menu-item-label,
@@ -110,6 +111,7 @@ ul li {
 
 .profile-link:hover {
   background-color: var(--menu-bg);
+  cursor: default;
 }
 
 .profile-img {
@@ -124,29 +126,29 @@ ul li {
 
 .profile-info:hover {
   color: var(--white);
+  cursor: pointer;
 }
 
 .setting-icon {
-  fill: var(--submenu);
+  color: var(--submenu);
   margin-left: auto;
   margin-right: 0px;
   padding: 5px 5px;
   border-radius: 16px;
-  height: 40px;
-  width: 40px;
 }
 
 .setting-icon:hover {
-  fill: var(--white);
+  color: var(--white);
   background-color: var(--menu-bg-hover);
+  cursor: pointer;
 }
 
 .active-menu-link {
   background-color: var(--menu-bg-hover);
 }
 
-.active-menu-svg {
-  fill: var(--white);
+.active-menu-icon {
+  color: var(--white);
 }
 
 .active-menu-label,
@@ -158,33 +160,12 @@ ul li {
   position: absolute;
   margin-top: 10px;
   margin-left: -3px;
-  height: 40px;
-  width: 40px;
   padding: 5px;
   background-color: var(--menu-bg);
-  fill: var(--white);
+  color: var(--white);
   border-radius: 5px;
   transform: rotate(180deg);
   cursor: pointer;
 }
 
 /* css intended for js */
-.label-hide,
-.number-hide,
-.setting-hide {
-  visibility: hidden;
-}
-
-.menu-width {
-  width: 60px;
-}
-
-/* Bug should be fixed */
-.profile-img-fix {
-  padding-left: 0px;
-}
-
-.menu-icon-rotate {
-  transform: rotate(0deg);
-  background-color: var(--menu-bg-hover);
-}
