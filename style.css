@@ -43,7 +43,7 @@ ul li {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-.menu-item a {
+.menu-item-link {
   display: flex;
   align-items: center;
   margin: 5px;
@@ -52,48 +52,55 @@ ul li {
   width: 280px;
 }
 
-.menu-item a:hover {
+.menu-item-link:hover {
   background-color: var(--menu-bg-hover);
 }
 
-.menu-item .label,
-.menu-item .number {
+.menu-item-svg {
+  fill: var(--submenu);
+  margin-right: 20px;
+}
+
+.menu-item-link:hover .menu-item-svg {
+  fill: var(--white);
+}
+
+.menu-item-label,
+.menu-item-number {
   color: var(--label);
   font-size: 16px;
 }
 
-.menu-item a:hover .label,
-.menu-item a:hover .number {
-  color: var(--white);
-}
-
-.menu-item .number {
+.menu-item-number {
   margin-left: auto;
   background-color: var(--menu-bg-hover);
   padding: 5px 15px;
   border-radius: 16px;
 }
 
-.menu svg {
-  fill: var(--submenu);
-  margin-right: 20px;
+.menu-item-label:hover,
+.menu-item-number:hover {
+  color: var(--white);
 }
 
-.menu-item a:hover svg {
-  fill: var(--white);
+.menu-item-number:empty {
+  display: none;
 }
 
 .submenu {
   margin-top: 50px;
 }
 
-.submenu a:hover {
+.submenu-link:hover {
   background-color: var(--menu-bg);
+}
+
+.submenu-label {
+  text-transform: uppercase;
   color: var(--submenu);
 }
 
-.submenu .label .submenu a:hover .label {
-  text-transform: uppercase;
+.submenu-label:hover {
   color: var(--submenu);
 }
 
@@ -101,27 +108,26 @@ ul li {
   margin-top: 30px;
 }
 
-.profile img {
+.profile-link:hover {
+  background-color: var(--menu-bg);
+}
+
+.profile-img {
   width: 40px;
   border-radius: 50%;
   margin-right: 15px;
 }
 
-.profile a:hover {
-  background-color: var(--menu-bg);
+.profile-info {
+  color: var(--submenu);
 }
 
-.profile a:hover .setting {
-  fill: var(--submenu);
-}
-
-.profile .info:hover {
+.profile-info:hover {
   color: var(--white);
 }
 
-/* for Specificity reasons svg.setting */
-
-svg.setting {
+.setting-icon {
+  fill: var(--submenu);
   margin-left: auto;
   margin-right: 0px;
   padding: 5px 5px;
@@ -130,30 +136,25 @@ svg.setting {
   width: 40px;
 }
 
-/* for Specificity reasons .profile svg.setting:hover */
-.profile svg.setting:hover {
+.setting-icon:hover {
   fill: var(--white);
   background-color: var(--menu-bg-hover);
 }
 
-.info {
-  color: var(--submenu);
-}
-
-.active a {
+.active-menu-link {
   background-color: var(--menu-bg-hover);
 }
 
-.active svg {
+.active-menu-svg {
   fill: var(--white);
 }
 
-.active .label,
+.active-menu-label,
 .active .number {
   color: var(--white);
 }
 
-.menu-icon {
+.toggle-arrow-icon {
   position: absolute;
   margin-top: 10px;
   margin-left: -3px;
