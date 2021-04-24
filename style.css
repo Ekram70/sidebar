@@ -51,6 +51,12 @@ ul li {
   padding: 8px;
   border-radius: 8px;
   width: 280px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.menu-item-label {
+  overflow: hidden;
 }
 
 .menu-item-link:hover {
@@ -106,6 +112,12 @@ ul li {
   color: var(--submenu);
 }
 
+.submenu-label,
+.profile-name,
+.profile-info {
+  white-space: nowrap;
+}
+
 .profile {
   margin-top: 30px;
 }
@@ -153,7 +165,7 @@ ul li {
 }
 
 .active-menu-label,
-.active .number {
+.active-menu-number {
   color: var(--white);
 }
 
@@ -173,6 +185,7 @@ ul li {
 
 .menu-item-link-width {
   width: 40px;
+  transition: all 0.5s ease;
 }
 
 .menu-item-main-label-change,
