@@ -40,6 +40,7 @@ ul li {
   display: inline-block;
   border-radius: 10px;
   padding: 5px;
+  height: 600px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -62,7 +63,7 @@ ul li {
   margin-right: 20px;
 }
 
-.menu-item-link:hover .menu-item-icon {
+.menu-item-main-link:hover .menu-item-icon {
   color: var(--white);
 }
 
@@ -88,20 +89,20 @@ ul li {
   display: none;
 }
 
-.submenu {
+.submenu-header {
   margin-top: 50px;
 }
 
-.submenu-link:hover {
+.submenu-header-link:hover {
   background-color: var(--menu-bg);
 }
 
-.submenu-label {
+.submenu-header-label {
   text-transform: uppercase;
   color: var(--submenu);
 }
 
-.submenu-label:hover {
+.submenu-header-label:hover {
   color: var(--submenu);
 }
 
@@ -164,8 +165,42 @@ ul li {
   background-color: var(--menu-bg);
   color: var(--white);
   border-radius: 5px;
-  transform: rotate(180deg);
   cursor: pointer;
+  transform: rotate(180deg);
 }
 
 /* css intended for js */
+
+.menu-item-link-width {
+  width: 40px;
+}
+
+.menu-item-main-label-change,
+.menu-item-number-change,
+.profile-name-change,
+.profile-info-change,
+.setting-icon-change,
+.active-menu-label-change,
+.submenu-label-change {
+  display: none;
+}
+
+.submenu-link-change {
+  cursor: default;
+}
+
+.submenu-link-change:hover {
+  background-color: transparent;
+}
+
+.profile-margin {
+  margin-top: 150px;
+}
+
+.profile-link-padding {
+  padding: 1px;
+}
+
+.toggle-arrow-icon-change {
+  transform: rotate(0deg);
+}

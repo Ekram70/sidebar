@@ -3,23 +3,26 @@
   jsdom: { html: "index.html" },
 });
 
-// Profile Image bug Should be fixed
-
-function sidebarToggle() {
-  let labels = document.querySelectorAll(".label");
-  let numbers = document.querySelectorAll(".number");
-  for (let i = 0; i < labels.length; i++) {
-    labels[i].classList.toggle("label-hide");
+function classToggle(className, newClassName) {
+  elem = document.querySelectorAll(className);
+  for (let i = 0; i < elem.length; i++) {
+    elem[i].classList.toggle(newClassName);
   }
-  for (let i = 0; i < numbers.length; i++) {
-    numbers[i].classList.toggle("number-hide");
-  }
-  let setting = document.querySelectorAll(".setting");
-  setting[0].classList.toggle("setting-hide");
-  let menu = document.querySelectorAll(".menu");
-  menu[0].classList.toggle("menu-width");
-  let profile = document.querySelectorAll(".profile a");
-  document
-    .querySelectorAll(".menu-icon")[0]
-    .classList.toggle("menu-icon-rotate");
 }
+
+let arrow = document.getElementById("toggle");
+
+toggle.addEventListener("click", function () {
+  classToggle(".menu-item-link", "menu-item-link-width");
+  classToggle(".menu-item-main-label", "menu-item-main-label-change");
+  classToggle(".menu-item-number", "menu-item-number-change");
+  classToggle(".profile-name", "profile-name-change");
+  classToggle(".profile-info", "profile-info-change");
+  classToggle(".setting-icon", "setting-icon-change");
+  classToggle(".active-menu-label", "active-menu-label-change");
+  classToggle(".submenu-label", "submenu-label-change");
+  classToggle(".submenu-link", "submenu-link-change");
+  classToggle(".profile", "profile-margin");
+  classToggle(".profile-link", "profile-link-padding");
+  classToggle(".toggle-arrow-icon", "toggle-arrow-icon-change");
+});

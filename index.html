@@ -35,8 +35,11 @@
     <div class="sidebar">
       <ul class="menu">
         <!-- Dashboard Item Start -->
-        <li class="menu-item active-menu">
-          <a href="#" class="menu-item-link active-menu-link">
+        <li class="menu-item menu-item-main active-menu">
+          <a
+            href="#"
+            class="menu-item-link menu-item-main-link active-menu-link"
+          >
             <span class="icon-home menu-item-icon active-menu-icon"></span>
             <span class="menu-item-label active-menu-label">Dashboard</span
             ><span class="menu-item-number"></span>
@@ -45,74 +48,75 @@
         <!-- Dashboard Item End -->
 
         <!-- Team Item Start -->
-        <li class="menu-item">
-          <a href="#" class="menu-item-link">
+        <li class="menu-item menu-item-main">
+          <a href="#" class="menu-item-link menu-item-main-link">
             <span class="icon-group menu-item-icon"></span>
-            <span class="menu-item-label">Team</span>
+            <span class="menu-item-label menu-item-main-label">Team</span>
             <span class="menu-item-number"></span>
           </a>
         </li>
         <!-- Team Item End -->
 
         <!-- Calendar Item Start -->
-        <li class="menu-item">
-          <a href="#" class="menu-item-link">
+        <li class="menu-item menu-item-main">
+          <a href="#" class="menu-item-link menu-item-main-link">
             <span class="icon-calendar menu-item-icon"></span>
-            <span class="menu-item-label">Calendar</span>
+            <span class="menu-item-label menu-item-main-label">Calendar</span>
             <span class="menu-item-number">4</span>
           </a>
         </li>
         <!-- Calendar Item End -->
 
         <!-- Document Item Start -->
-        <li class="menu-item">
-          <a href="#" class="menu-item-link">
+        <li class="menu-item menu-item-main">
+          <a href="#" class="menu-item-link menu-item-main-link">
             <span class="icon-file menu-item-icon"></span>
-            <span class="menu-item-label">Document</span>
+            <span class="menu-item-label menu-item-main-label">Document</span>
             <span class="menu-item-number">5</span>
           </a>
         </li>
         <!-- Document Item End -->
 
         <!-- Reports Item Start -->
-        <li class="menu-item">
-          <a href="#" class="menu-item-link">
+        <li class="menu-item menu-item-main">
+          <a href="#" class="menu-item-link menu-item-main-link">
             <span class="icon-chart menu-item-icon"></span>
-            <span class="menu-item-label">Reports</span>
+            <span class="menu-item-label menu-item-main-label">Reports</span>
             <span class="menu-item-number"></span>
           </a>
         </li>
         <!-- Report Item End -->
 
         <!-- Sub menu Item Start -->
+        <li class="menu-item submenu submenu-header">
+          <a href="#" class="menu-item-link submenu-link submenu-header-link">
+            <span class="menu-item-label submenu-label submenu-header-label"
+              >Projects</span
+            >
+          </a>
+        </li>
         <li class="menu-item submenu">
           <a href="#" class="menu-item-link submenu-link">
-            <span class="menu-item-label submenu-label">Projects</span>
-            <span class="menu-item-number"></span>
+            <span class="menu-item-label submenu-label">Website Redesign</span>
           </a>
         </li>
-        <li class="menu-item">
-          <a href="#" class="menu-item-link">
-            <span class="menu-item-label">Website Redesign</span>
-            <span class="menu-item-number"></span>
+        <li class="menu-item submenu">
+          <a href="#" class="menu-item-link submenu-link">
+            <span class="menu-item-label submenu-label">GraphQL API</span>
           </a>
         </li>
-        <li class="menu-item">
-          <a href="#" class="menu-item-link">
-            <span class="menu-item-label">GraphQL API</span>
-            <span class="menu-item-number"></span>
+        <li class="menu-item submenu">
+          <a href="#" class="menu-item-link submenu-link">
+            <span class="menu-item-label submenu-label"
+              >Custom Migration Guides</span
+            >
           </a>
         </li>
-        <li class="menu-item">
-          <a href="#" class="menu-item-link">
-            <span class="menu-item-label">Custom Migration Guides</span>
-            <span class="menu-item-number"></span>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-item-link">
-            <span class="menu-item-label">Profit Sharing Program</span>
-            <span class="menu-item-number"></span>
+        <li class="menu-item submenu">
+          <a href="#" class="menu-item-link submenu-link">
+            <span class="menu-item-label submenu-label"
+              >Profit Sharing Program</span
+            >
           </a>
         </li>
         <!-- Sub menu Item End -->
@@ -134,7 +138,10 @@
       </ul>
 
       <!-- Arrow icon -->
-      <span class="icon-arrow menu-item-icon toggle-arrow-icon"></span>
+      <span
+        class="icon-arrow menu-item-icon toggle-arrow-icon"
+        id="toggle"
+      ></span>
     </div>
     <!-- Black Sidebar Ends-->
 
